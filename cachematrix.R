@@ -37,7 +37,6 @@ makeCacheMatrix <- function(mat = matrix()) {
 ##If the inverese was calculated in a previous iteration and stored in the cache it will use that as the output.
 ##If the value is not stored in cache, it will obtain the original matrix using get()function,then use solve() function 
 ##to calculate the inverse which in turn is then stored in the cache matrix using the setinv() function. 
- 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
