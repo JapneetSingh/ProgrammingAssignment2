@@ -15,7 +15,7 @@
 ##makeCacheMatrix() function accepts the square matrix as input. Its body consists of four differenct functions:
 ##*set()- to make changes the original matrix. Accepts the changed matrix as input
 ##*get()-gets the original matrix the inverse for which is stored in the cache
-##*setinv()-Used to store the Inverse matrix in cache after calculation
+*setinv()-Used to store the Inverse matrix in cache after calculation
 ##*getinv()-used to obtain the inverse stored in the cache
 ##Output for this function consists of a list consisting the above four functions.
 
@@ -32,12 +32,12 @@ makeCacheMatrix <- function(mat = matrix()) {
 }
 
 
-## cacheSolve() uses the list created by makeCacheMatrix() as the input.
+##cacheSolve() uses the list created by makeCacheMatrix() as the input.
 ##It starts by checking if any value is stored in the inverse using the getinv() function. 
 ##If the inverese was calculated in a previous iteration and stored in the cache it will use that as the output.
 ##If the value is not stored in cache, it will obtain the original matrix using get()function,then use solve() function 
 ##to calculate the inverse which in turn is then stored in the cache matrix using the setinv() function. 
-
+ 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
