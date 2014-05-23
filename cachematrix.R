@@ -7,16 +7,16 @@
 ##The calculated inverse matrix is stored here after being calculated for the first time.
 ##
 ##2)cacheSolve():- this function is used to calculate the inverse of the matrix input as an argument into the 
-##makeCacheMatrix() and then store its output in the in the same if not already stored . 
+##makeCacheMatrix() and then store its output in the in the same if not already stored. 
 ##It accepts the list created in makeCache Matrix() as the argument and  gives out the inverse of the matrix as the output.
 
 
 
 ##makeCacheMatrix() function accepts the square matrix as input. Its body consists of four differenct functions:
-##*set()- to make changes the original matrix. Accepts the changed matrix as input
-##*get()-gets the original matrix the inverse for which is stored in the cache
-*setinv()-Used to store the Inverse matrix in cache after calculation
-##*getinv()-used to obtain the inverse stored in the cache
+##set()- to make changes the original matrix. Accepts the changed matrix as input
+##get()-gets the original matrix the inverse for which is stored in the cache
+##setinv()-Used to store the Inverse matrix in cache after calculation
+##getinv()-used to obtain the inverse stored in the cache
 ##Output for this function consists of a list consisting the above four functions.
 
 makeCacheMatrix <- function(mat = matrix()) {
